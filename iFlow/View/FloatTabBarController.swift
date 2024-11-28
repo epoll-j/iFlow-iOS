@@ -33,8 +33,8 @@ class FloatTabBarController: UITabBarController {
         
         var frame = self.tabBar.frame
         frame.size.height = 84
-        frame.size.width = frame.size.width - 60
-        frame.origin.x = 30
+        frame.size.width = frame.size.width - 30
+        frame.origin.x = 15
         frame.origin.y = self.view.frame.size.height - frame.size.height - 34
         self.tabBar.frame = frame
         self.tabBar.backgroundColor = .white

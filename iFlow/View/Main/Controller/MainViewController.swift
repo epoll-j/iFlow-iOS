@@ -18,7 +18,7 @@ class MainViewController: UIViewController {
     var floatingButton: UIButton!
     
     let boxes = [
-        Box(title: "PASSWORDS", items: 28, iconName: "lock"),
+        Box(title: "域名过滤", items: 28, iconName: "lock"),
         Box(title: "IMAGES", items: 500, iconName: "photo"),
         Box(title: "VIDEOS", items: 13, iconName: "film"),
         Box(title: "RANDOM", items: 9, iconName: "tray"),
@@ -39,7 +39,7 @@ class MainViewController: UIViewController {
             })
         
         let layout = UICollectionViewFlowLayout()
-        layout.headerReferenceSize = CGSize(width: view.frame.width, height: 100)
+        layout.headerReferenceSize = CGSize(width: view.frame.width, height: 200)
         layout.sectionInset = UIEdgeInsets(top: 0, left: 30, bottom: 200, right: 30)
         layout.itemSize = CGSize(width: (view.frame.size.width - 90) / 2, height: 150)
         layout.minimumLineSpacing = 20
@@ -83,6 +83,8 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // Action on cell tap
+        let vc = HostFilterTabViewController()
+        vc.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

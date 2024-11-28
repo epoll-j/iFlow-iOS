@@ -21,6 +21,10 @@
 		4642E72C2CEA489F00A29AAD /* FloatTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4642E72B2CEA489F00A29AAD /* FloatTabBar.swift */; };
 		4642E72E2CEA48C200A29AAD /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4642E72D2CEA48C200A29AAD /* GradientView.swift */; };
 		4642E7302CEA48DE00A29AAD /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4642E72F2CEA48DE00A29AAD /* CollectionHeaderView.swift */; };
+		469421732CF721D70004FE29 /* SwiftyFORM in Frameworks */ = {isa = PBXBuildFile; productRef = 469421722CF721D70004FE29 /* SwiftyFORM */; };
+		469421782CF80CF20004FE29 /* HostFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469421772CF80CF20004FE29 /* HostFilterViewController.swift */; };
+		4694217D2CF86AFB0004FE29 /* HostFilterTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694217C2CF86AFB0004FE29 /* HostFilterTabViewController.swift */; };
+		469421802CF86EF90004FE29 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 4694217F2CF86EF90004FE29 /* Tabman */; };
 		46BF6F5E2CF23B78009C24BA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 46BF6F5D2CF23B78009C24BA /* Lottie */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +42,8 @@
 		4642E72B2CEA489F00A29AAD /* FloatTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatTabBar.swift; sourceTree = "<group>"; };
 		4642E72D2CEA48C200A29AAD /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4642E72F2CEA48DE00A29AAD /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		469421772CF80CF20004FE29 /* HostFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostFilterViewController.swift; sourceTree = "<group>"; };
+		4694217C2CF86AFB0004FE29 /* HostFilterTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostFilterTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,9 @@
 				4642E71F2CEA282D00A29AAD /* DynamicButton in Frameworks */,
 				4642E7252CEA2A0D00A29AAD /* Then in Frameworks */,
 				4642E7222CEA29E300A29AAD /* SnapKit in Frameworks */,
+				469421732CF721D70004FE29 /* SwiftyFORM in Frameworks */,
 				46BF6F5E2CF23B78009C24BA /* Lottie in Frameworks */,
+				469421802CF86EF90004FE29 /* Tabman in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +96,7 @@
 		4642E7182CEA275F00A29AAD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				469421742CF80C0A0004FE29 /* Setting */,
 				4642E7192CEA276900A29AAD /* Main */,
 				4642E7292CEA488000A29AAD /* FloatTabBarController.swift */,
 				4642E72B2CEA489F00A29AAD /* FloatTabBar.swift */,
@@ -122,6 +131,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		469421742CF80C0A0004FE29 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				469421752CF80C3F0004FE29 /* HostFilter */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		469421752CF80C3F0004FE29 /* HostFilter */ = {
+			isa = PBXGroup;
+			children = (
+				469421762CF80CDD0004FE29 /* Controller */,
+			);
+			path = HostFilter;
+			sourceTree = "<group>";
+		};
+		469421762CF80CDD0004FE29 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				469421772CF80CF20004FE29 /* HostFilterViewController.swift */,
+				4694217C2CF86AFB0004FE29 /* HostFilterTabViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +177,8 @@
 				4642E7212CEA29E300A29AAD /* SnapKit */,
 				4642E7242CEA2A0D00A29AAD /* Then */,
 				46BF6F5D2CF23B78009C24BA /* Lottie */,
+				469421722CF721D70004FE29 /* SwiftyFORM */,
+				4694217F2CF86EF90004FE29 /* Tabman */,
 			);
 			productName = iFlow;
 			productReference = 4642E7012CEA25AE00A29AAD /* iFlow.app */;
@@ -177,6 +213,8 @@
 				4642E7202CEA29E200A29AAD /* XCRemoteSwiftPackageReference "SnapKit" */,
 				4642E7232CEA2A0D00A29AAD /* XCRemoteSwiftPackageReference "Then" */,
 				46BF6F5C2CF23B77009C24BA /* XCRemoteSwiftPackageReference "lottie-spm" */,
+				469421712CF721D70004FE29 /* XCRemoteSwiftPackageReference "SwiftyFORM" */,
+				4694217E2CF86EF90004FE29 /* XCRemoteSwiftPackageReference "Tabman" */,
 			);
 			productRefGroup = 4642E7022CEA25AE00A29AAD /* Products */;
 			projectDirPath = "";
@@ -204,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4694217D2CF86AFB0004FE29 /* HostFilterTabViewController.swift in Sources */,
 				4642E7302CEA48DE00A29AAD /* CollectionHeaderView.swift in Sources */,
 				4642E7092CEA25AE00A29AAD /* ViewController.swift in Sources */,
 				4642E7052CEA25AE00A29AAD /* AppDelegate.swift in Sources */,
@@ -212,6 +251,7 @@
 				4642E72C2CEA489F00A29AAD /* FloatTabBar.swift in Sources */,
 				4642E71B2CEA279100A29AAD /* MainViewController.swift in Sources */,
 				4642E72E2CEA48C200A29AAD /* GradientView.swift in Sources */,
+				469421782CF80CF20004FE29 /* HostFilterViewController.swift in Sources */,
 				4642E7282CEA485100A29AAD /* BoxCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +491,22 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		469421712CF721D70004FE29 /* XCRemoteSwiftPackageReference "SwiftyFORM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/neoneye/SwiftyFORM.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.6;
+			};
+		};
+		4694217E2CF86EF90004FE29 /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
 		46BF6F5C2CF23B77009C24BA /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
@@ -476,6 +532,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4642E7232CEA2A0D00A29AAD /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		469421722CF721D70004FE29 /* SwiftyFORM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 469421712CF721D70004FE29 /* XCRemoteSwiftPackageReference "SwiftyFORM" */;
+			productName = SwiftyFORM;
+		};
+		4694217F2CF86EF90004FE29 /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4694217E2CF86EF90004FE29 /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
 		};
 		46BF6F5D2CF23B78009C24BA /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
