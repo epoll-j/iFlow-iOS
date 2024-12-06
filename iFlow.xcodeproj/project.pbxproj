@@ -37,6 +37,26 @@
 		4627199D2D02025B0071A52D /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462719802D02025B0071A52D /* Date+Extension.swift */; };
 		4627199E2D02025B0071A52D /* Dictionary+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462719812D02025B0071A52D /* Dictionary+Json.swift */; };
 		4627199F2D02025B0071A52D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462719822D02025B0071A52D /* String+Extension.swift */; };
+		463180FC2D02CED000A1E6A1 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 463180FB2D02CED000A1E6A1 /* NIO */; };
+		463180FE2D02CED000A1E6A1 /* NIOCore in Frameworks */ = {isa = PBXBuildFile; productRef = 463180FD2D02CED000A1E6A1 /* NIOCore */; };
+		463181002D02CED000A1E6A1 /* NIOEmbedded in Frameworks */ = {isa = PBXBuildFile; productRef = 463180FF2D02CED000A1E6A1 /* NIOEmbedded */; };
+		463181022D02CED000A1E6A1 /* NIOFoundationCompat in Frameworks */ = {isa = PBXBuildFile; productRef = 463181012D02CED000A1E6A1 /* NIOFoundationCompat */; };
+		463181042D02CED000A1E6A1 /* NIOHTTP1 in Frameworks */ = {isa = PBXBuildFile; productRef = 463181032D02CED000A1E6A1 /* NIOHTTP1 */; };
+		463181062D02CED000A1E6A1 /* NIOWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 463181052D02CED000A1E6A1 /* NIOWebSocket */; };
+		463181092D02CEE100A1E6A1 /* NIOSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 463181082D02CEE100A1E6A1 /* NIOSSL */; };
+		4631810C2D02CF1000A1E6A1 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 4631810B2D02CF1000A1E6A1 /* Reachability */; };
+		4631810F2D02CF2000A1E6A1 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 4631810E2D02CF2000A1E6A1 /* SwiftyJSON */; };
+		463181132D02D03700A1E6A1 /* HostFilterTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463181102D02D03700A1E6A1 /* HostFilterTabViewController.swift */; };
+		463181142D02D03700A1E6A1 /* HostFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463181112D02D03700A1E6A1 /* HostFilterViewController.swift */; };
+		463181282D02D7FB00A1E6A1 /* Database.h in Headers */ = {isa = PBXBuildFile; fileRef = 463181272D02D7FB00A1E6A1 /* Database.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4631812B2D02D7FB00A1E6A1 /* Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463181252D02D7FB00A1E6A1 /* Database.framework */; };
+		4631812C2D02D7FB00A1E6A1 /* Database.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 463181252D02D7FB00A1E6A1 /* Database.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		463181312D02D81400A1E6A1 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 463181302D02D81400A1E6A1 /* SQLite */; };
+		463181342D02D83E00A1E6A1 /* DatabaseTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463181332D02D83E00A1E6A1 /* DatabaseTable.swift */; };
+		463181362D02D88000A1E6A1 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463181352D02D88000A1E6A1 /* DatabaseManager.swift */; };
+		463181382D02D8C600A1E6A1 /* HostFilterTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463181372D02D8C600A1E6A1 /* HostFilterTable.swift */; };
+		4631813A2D02DAB500A1E6A1 /* Database.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 463181252D02D7FB00A1E6A1 /* Database.framework */; };
+		4631813B2D02DAB500A1E6A1 /* Database.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 463181252D02D7FB00A1E6A1 /* Database.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4642E7052CEA25AE00A29AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4642E7042CEA25AE00A29AAD /* AppDelegate.swift */; };
 		4642E7072CEA25AE00A29AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4642E7062CEA25AE00A29AAD /* SceneDelegate.swift */; };
 		4642E7092CEA25AE00A29AAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4642E7082CEA25AE00A29AAD /* ViewController.swift */; };
@@ -52,8 +72,6 @@
 		4642E72E2CEA48C200A29AAD /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4642E72D2CEA48C200A29AAD /* GradientView.swift */; };
 		4642E7302CEA48DE00A29AAD /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4642E72F2CEA48DE00A29AAD /* CollectionHeaderView.swift */; };
 		469421732CF721D70004FE29 /* SwiftyFORM in Frameworks */ = {isa = PBXBuildFile; productRef = 469421722CF721D70004FE29 /* SwiftyFORM */; };
-		469421782CF80CF20004FE29 /* HostFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469421772CF80CF20004FE29 /* HostFilterViewController.swift */; };
-		4694217D2CF86AFB0004FE29 /* HostFilterTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694217C2CF86AFB0004FE29 /* HostFilterTabViewController.swift */; };
 		469421802CF86EF90004FE29 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 4694217F2CF86EF90004FE29 /* Tabman */; };
 		46BF6F5E2CF23B78009C24BA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 46BF6F5D2CF23B78009C24BA /* Lottie */; };
 /* End PBXBuildFile section */
@@ -66,6 +84,20 @@
 			remoteGlobalIDString = 462719562D02022E0071A52D;
 			remoteInfo = ProxyService;
 		};
+		463181292D02D7FB00A1E6A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4642E6F92CEA25AE00A29AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 463181242D02D7FB00A1E6A1;
+			remoteInfo = Database;
+		};
+		4631813C2D02DAB500A1E6A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4642E6F92CEA25AE00A29AAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 463181242D02D7FB00A1E6A1;
+			remoteInfo = Database;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +108,18 @@
 			dstSubfolderSpec = 10;
 			files = (
 				4627195E2D02022E0071A52D /* ProxyService.framework in Embed Frameworks */,
+				4631812C2D02D7FB00A1E6A1 /* Database.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4631813E2D02DAB500A1E6A1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4631813B2D02DAB500A1E6A1 /* Database.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +156,13 @@
 		462719802D02025B0071A52D /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		462719812D02025B0071A52D /* Dictionary+Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Json.swift"; sourceTree = "<group>"; };
 		462719822D02025B0071A52D /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		463181102D02D03700A1E6A1 /* HostFilterTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostFilterTabViewController.swift; sourceTree = "<group>"; };
+		463181112D02D03700A1E6A1 /* HostFilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostFilterViewController.swift; sourceTree = "<group>"; };
+		463181252D02D7FB00A1E6A1 /* Database.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Database.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		463181272D02D7FB00A1E6A1 /* Database.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		463181332D02D83E00A1E6A1 /* DatabaseTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTable.swift; sourceTree = "<group>"; };
+		463181352D02D88000A1E6A1 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		463181372D02D8C600A1E6A1 /* HostFilterTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostFilterTable.swift; sourceTree = "<group>"; };
 		4642E7012CEA25AE00A29AAD /* iFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4642E7042CEA25AE00A29AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4642E7062CEA25AE00A29AAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,8 +176,6 @@
 		4642E72B2CEA489F00A29AAD /* FloatTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatTabBar.swift; sourceTree = "<group>"; };
 		4642E72D2CEA48C200A29AAD /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4642E72F2CEA48DE00A29AAD /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
-		469421772CF80CF20004FE29 /* HostFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostFilterViewController.swift; sourceTree = "<group>"; };
-		4694217C2CF86AFB0004FE29 /* HostFilterTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostFilterTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +183,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4631810F2D02CF2000A1E6A1 /* SwiftyJSON in Frameworks */,
+				4631813A2D02DAB500A1E6A1 /* Database.framework in Frameworks */,
+				463181022D02CED000A1E6A1 /* NIOFoundationCompat in Frameworks */,
+				463181002D02CED000A1E6A1 /* NIOEmbedded in Frameworks */,
+				463180FE2D02CED000A1E6A1 /* NIOCore in Frameworks */,
+				463181092D02CEE100A1E6A1 /* NIOSSL in Frameworks */,
+				463181042D02CED000A1E6A1 /* NIOHTTP1 in Frameworks */,
+				4631810C2D02CF1000A1E6A1 /* Reachability in Frameworks */,
+				463180FC2D02CED000A1E6A1 /* NIO in Frameworks */,
+				463181062D02CED000A1E6A1 /* NIOWebSocket in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463181222D02D7FB00A1E6A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463181312D02D81400A1E6A1 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +213,7 @@
 				4642E7222CEA29E300A29AAD /* SnapKit in Frameworks */,
 				4627195D2D02022E0071A52D /* ProxyService.framework in Frameworks */,
 				469421732CF721D70004FE29 /* SwiftyFORM in Frameworks */,
+				4631812B2D02D7FB00A1E6A1 /* Database.framework in Frameworks */,
 				46BF6F5E2CF23B78009C24BA /* Lottie in Frameworks */,
 				469421802CF86EF90004FE29 /* Tabman in Frameworks */,
 			);
@@ -229,12 +297,49 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		463181122D02D03700A1E6A1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				463181102D02D03700A1E6A1 /* HostFilterTabViewController.swift */,
+				463181112D02D03700A1E6A1 /* HostFilterViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		463181262D02D7FB00A1E6A1 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				463181322D02D82700A1E6A1 /* Table */,
+				463181272D02D7FB00A1E6A1 /* Database.h */,
+				463181352D02D88000A1E6A1 /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		463181322D02D82700A1E6A1 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				463181332D02D83E00A1E6A1 /* DatabaseTable.swift */,
+				463181372D02D8C600A1E6A1 /* HostFilterTable.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		463181392D02DAB500A1E6A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4642E6F82CEA25AE00A29AAD = {
 			isa = PBXGroup;
 			children = (
 				4642E7032CEA25AE00A29AAD /* iFlow */,
 				462719582D02022E0071A52D /* ProxyService */,
+				463181262D02D7FB00A1E6A1 /* Database */,
 				4642E7022CEA25AE00A29AAD /* Products */,
+				463181392D02DAB500A1E6A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -243,6 +348,7 @@
 			children = (
 				4642E7012CEA25AE00A29AAD /* iFlow.app */,
 				462719572D02022E0071A52D /* ProxyService.framework */,
+				463181252D02D7FB00A1E6A1 /* Database.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -302,26 +408,9 @@
 		469421742CF80C0A0004FE29 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				469421752CF80C3F0004FE29 /* HostFilter */,
+				463181122D02D03700A1E6A1 /* Controller */,
 			);
 			path = Setting;
-			sourceTree = "<group>";
-		};
-		469421752CF80C3F0004FE29 /* HostFilter */ = {
-			isa = PBXGroup;
-			children = (
-				469421762CF80CDD0004FE29 /* Controller */,
-			);
-			path = HostFilter;
-			sourceTree = "<group>";
-		};
-		469421762CF80CDD0004FE29 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				469421772CF80CF20004FE29 /* HostFilterViewController.swift */,
-				4694217C2CF86AFB0004FE29 /* HostFilterTabViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +421,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4627195A2D02022E0071A52D /* ProxyService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463181202D02D7FB00A1E6A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463181282D02D7FB00A1E6A1 /* Database.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,14 +443,48 @@
 				462719532D02022E0071A52D /* Sources */,
 				462719542D02022E0071A52D /* Frameworks */,
 				462719552D02022E0071A52D /* Resources */,
+				4631813E2D02DAB500A1E6A1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4631813D2D02DAB500A1E6A1 /* PBXTargetDependency */,
+			);
+			name = ProxyService;
+			packageProductDependencies = (
+				463180FB2D02CED000A1E6A1 /* NIO */,
+				463180FD2D02CED000A1E6A1 /* NIOCore */,
+				463180FF2D02CED000A1E6A1 /* NIOEmbedded */,
+				463181012D02CED000A1E6A1 /* NIOFoundationCompat */,
+				463181032D02CED000A1E6A1 /* NIOHTTP1 */,
+				463181052D02CED000A1E6A1 /* NIOWebSocket */,
+				463181082D02CEE100A1E6A1 /* NIOSSL */,
+				4631810B2D02CF1000A1E6A1 /* Reachability */,
+				4631810E2D02CF2000A1E6A1 /* SwiftyJSON */,
+			);
+			productName = ProxyService;
+			productReference = 462719572D02022E0071A52D /* ProxyService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		463181242D02D7FB00A1E6A1 /* Database */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4631812D2D02D7FB00A1E6A1 /* Build configuration list for PBXNativeTarget "Database" */;
+			buildPhases = (
+				463181202D02D7FB00A1E6A1 /* Headers */,
+				463181212D02D7FB00A1E6A1 /* Sources */,
+				463181222D02D7FB00A1E6A1 /* Frameworks */,
+				463181232D02D7FB00A1E6A1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ProxyService;
-			productName = ProxyService;
-			productReference = 462719572D02022E0071A52D /* ProxyService.framework */;
+			name = Database;
+			packageProductDependencies = (
+				463181302D02D81400A1E6A1 /* SQLite */,
+			);
+			productName = Database;
+			productReference = 463181252D02D7FB00A1E6A1 /* Database.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		4642E7002CEA25AE00A29AAD /* iFlow */ = {
@@ -369,6 +500,7 @@
 			);
 			dependencies = (
 				4627195C2D02022E0071A52D /* PBXTargetDependency */,
+				4631812A2D02D7FB00A1E6A1 /* PBXTargetDependency */,
 			);
 			name = iFlow;
 			packageProductDependencies = (
@@ -397,6 +529,10 @@
 						CreatedOnToolsVersion = 15.4;
 						LastSwiftMigration = 1540;
 					};
+					463181242D02D7FB00A1E6A1 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
 					4642E7002CEA25AE00A29AAD = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -418,6 +554,11 @@
 				46BF6F5C2CF23B77009C24BA /* XCRemoteSwiftPackageReference "lottie-spm" */,
 				469421712CF721D70004FE29 /* XCRemoteSwiftPackageReference "SwiftyFORM" */,
 				4694217E2CF86EF90004FE29 /* XCRemoteSwiftPackageReference "Tabman" */,
+				463180FA2D02CED000A1E6A1 /* XCRemoteSwiftPackageReference "swift-nio" */,
+				463181072D02CEE100A1E6A1 /* XCRemoteSwiftPackageReference "swift-nio-ssl" */,
+				4631810A2D02CF1000A1E6A1 /* XCRemoteSwiftPackageReference "Reachability" */,
+				4631810D2D02CF2000A1E6A1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				463181152D02D0DD00A1E6A1 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
 			);
 			productRefGroup = 4642E7022CEA25AE00A29AAD /* Products */;
 			projectDirPath = "";
@@ -425,12 +566,20 @@
 			targets = (
 				4642E7002CEA25AE00A29AAD /* iFlow */,
 				462719562D02022E0071A52D /* ProxyService */,
+				463181242D02D7FB00A1E6A1 /* Database */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		462719552D02022E0071A52D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		463181232D02D7FB00A1E6A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -483,20 +632,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		463181212D02D7FB00A1E6A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463181362D02D88000A1E6A1 /* DatabaseManager.swift in Sources */,
+				463181382D02D8C600A1E6A1 /* HostFilterTable.swift in Sources */,
+				463181342D02D83E00A1E6A1 /* DatabaseTable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4642E6FD2CEA25AE00A29AAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4694217D2CF86AFB0004FE29 /* HostFilterTabViewController.swift in Sources */,
+				463181132D02D03700A1E6A1 /* HostFilterTabViewController.swift in Sources */,
 				4642E7302CEA48DE00A29AAD /* CollectionHeaderView.swift in Sources */,
 				4642E7092CEA25AE00A29AAD /* ViewController.swift in Sources */,
 				4642E7052CEA25AE00A29AAD /* AppDelegate.swift in Sources */,
 				4642E72A2CEA488000A29AAD /* FloatTabBarController.swift in Sources */,
 				4642E7072CEA25AE00A29AAD /* SceneDelegate.swift in Sources */,
 				4642E72C2CEA489F00A29AAD /* FloatTabBar.swift in Sources */,
+				463181142D02D03700A1E6A1 /* HostFilterViewController.swift in Sources */,
 				4642E71B2CEA279100A29AAD /* MainViewController.swift in Sources */,
 				4642E72E2CEA48C200A29AAD /* GradientView.swift in Sources */,
-				469421782CF80CF20004FE29 /* HostFilterViewController.swift in Sources */,
 				4642E7282CEA485100A29AAD /* BoxCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +667,16 @@
 			isa = PBXTargetDependency;
 			target = 462719562D02022E0071A52D /* ProxyService */;
 			targetProxy = 4627195B2D02022E0071A52D /* PBXContainerItemProxy */;
+		};
+		4631812A2D02D7FB00A1E6A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 463181242D02D7FB00A1E6A1 /* Database */;
+			targetProxy = 463181292D02D7FB00A1E6A1 /* PBXContainerItemProxy */;
+		};
+		4631813D2D02DAB500A1E6A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 463181242D02D7FB00A1E6A1 /* Database */;
+			targetProxy = 4631813C2D02DAB500A1E6A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -585,6 +754,79 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = mobi.iflow.app.ProxyService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4631812E2D02D7FB00A1E6A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FVLFR9QYGC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.iflow.app.Database;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4631812F2D02D7FB00A1E6A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = FVLFR9QYGC;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.iflow.app.Database;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -783,6 +1025,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4631812D2D02D7FB00A1E6A1 /* Build configuration list for PBXNativeTarget "Database" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4631812E2D02D7FB00A1E6A1 /* Debug */,
+				4631812F2D02D7FB00A1E6A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4642E6FC2CEA25AE00A29AAD /* Build configuration list for PBXProject "iFlow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -804,6 +1055,46 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		463180FA2D02CED000A1E6A1 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.77.0;
+			};
+		};
+		463181072D02CEE100A1E6A1 /* XCRemoteSwiftPackageReference "swift-nio-ssl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio-ssl.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.29.0;
+			};
+		};
+		4631810A2D02CF1000A1E6A1 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		4631810D2D02CF2000A1E6A1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+		463181152D02D0DD00A1E6A1 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
 		4642E71D2CEA282D00A29AAD /* XCRemoteSwiftPackageReference "DynamicButton" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/yannickl/DynamicButton.git";
@@ -855,6 +1146,56 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		463180FB2D02CED000A1E6A1 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 463180FA2D02CED000A1E6A1 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		463180FD2D02CED000A1E6A1 /* NIOCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 463180FA2D02CED000A1E6A1 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOCore;
+		};
+		463180FF2D02CED000A1E6A1 /* NIOEmbedded */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 463180FA2D02CED000A1E6A1 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOEmbedded;
+		};
+		463181012D02CED000A1E6A1 /* NIOFoundationCompat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 463180FA2D02CED000A1E6A1 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOFoundationCompat;
+		};
+		463181032D02CED000A1E6A1 /* NIOHTTP1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 463180FA2D02CED000A1E6A1 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOHTTP1;
+		};
+		463181052D02CED000A1E6A1 /* NIOWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 463180FA2D02CED000A1E6A1 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOWebSocket;
+		};
+		463181082D02CEE100A1E6A1 /* NIOSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 463181072D02CEE100A1E6A1 /* XCRemoteSwiftPackageReference "swift-nio-ssl" */;
+			productName = NIOSSL;
+		};
+		4631810B2D02CF1000A1E6A1 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4631810A2D02CF1000A1E6A1 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		4631810E2D02CF2000A1E6A1 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4631810D2D02CF2000A1E6A1 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		463181302D02D81400A1E6A1 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 463181152D02D0DD00A1E6A1 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
 		4642E71E2CEA282D00A29AAD /* DynamicButton */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4642E71D2CEA282D00A29AAD /* XCRemoteSwiftPackageReference "DynamicButton" */;
