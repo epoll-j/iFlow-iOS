@@ -10,6 +10,7 @@ import Then
 import SnapKit
 import Lottie
 import DynamicButton
+import ProxyService
 
 class CollectionHeaderView: UICollectionReusableView {
     static let identifier = "CollectionHeaderView"
@@ -19,18 +20,22 @@ class CollectionHeaderView: UICollectionReusableView {
     private var packetCountView: DataItemView!
     private var timeView: DataItemView!
     private var actionButton: DynamicButton!
+    private var proxyService: ProxyService?
+    var onHeaderTap: (() -> Void)?
     
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
         setupView()
+        proxyService = ProxyService.create()
     }
     
     private func setupView() {
         let mainColor = UIColor(red: 110 / 255, green: 125 / 255, blue: 235 / 255, alpha: 0.9)
         
-        cardView = UIView().then({
+        cardView = UIView().then({ [weak self] in
+            guard let self = self else { return }
             addSubview($0)
             $0.snp.makeConstraints { make in
                 make.height.equalTo(110)
@@ -43,6 +48,8 @@ class CollectionHeaderView: UICollectionReusableView {
             $0.layer.shadowColor = UIColor.black.cgColor
             $0.layer.shadowOpacity = 0.1
             $0.layer.shadowOffset = CGSize(width: 0, height: 1)
+            
+            self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleHeaderTap(_:))))
         })
         
         _ = UIView().then { [weak self] in
@@ -148,9 +155,19 @@ class CollectionHeaderView: UICollectionReusableView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @objc func handleHeaderTap(_ sender: UITapGestureRecognizer) {
+        onHeaderTap?()
+    }
+    
     @objc func handleAction() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100), execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(100), execute: { [weak self] in
+            guard let self = self else {
+                return
+            }
             self.actionButton.setStyle(self.actionButton.style == .play ? .pause : .play, animated: true)
+            //            self.proxyService?.run({ <#Result<Int, any Error>#> in
+            //                <#code#>
+            //            })
         })
         
     }

@@ -26,7 +26,7 @@ public class HostFilterTable: DatabaseTable {
     typealias ModelType = HostFilter
     
     let table = Table("host_filter")
-    let id = Expression<Int64>("id")
+    var id = Expression<Int64>("id")
     let host = Expression<String>("host")
     let type = Expression<Int>("type")
     
@@ -66,6 +66,10 @@ public class HostFilterTable: DatabaseTable {
         }
         
         return hosts
+    }
+    
+    public func delete(model: HostFilter) throws {
+        try DatabaseManager.shared?.connection().run(table.filter(self.id == model.id).delete())
     }
     
 }

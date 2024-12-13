@@ -27,7 +27,7 @@ class HostFilterTabViewController: TabmanViewController {
             $0.contentInset = UIEdgeInsets(top: 20.0, left: 20.0, bottom: 0.0, right: 20.0)
         }
         addBar(bar, dataSource: self, at: .top)
-        
+        isScrollEnabled = false
     }
 }
 

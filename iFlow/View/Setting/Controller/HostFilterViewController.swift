@@ -7,6 +7,8 @@
 
 import UIKit
 import SnapKit
+import Database
+import Tabman
 
 enum FilterType {
     case white
@@ -19,8 +21,8 @@ class HostFilterViewController: UIViewController {
     
     private let tableView = UITableView()
     private let enableSwitch = UISwitch()
-    private var hosts: [String] = []
-    
+    private var hosts: [HostFilter] = []
+    private let table = HostFilterTable()
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -35,6 +37,15 @@ class HostFilterViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
+        reloadData()
+    }
+        
+    func reloadData() {
+        do {
+            hosts = try self.table.fetchByType(type == .white ? 0 : 1)
+        } catch {
+            hosts = []
+        }
     }
     
     func setupUI() {
@@ -153,9 +164,11 @@ class HostFilterViewController: UIViewController {
         alertController.addTextField { textField in
             textField.placeholder = "Host"
         }
-        let addAction = UIAlertAction(title: "添加", style: .default) { _ in
+        let addAction = UIAlertAction(title: "添加", style: .default) { [weak self] _ in
+            guard let self = self else { return }
             if let host = alertController.textFields?.first?.text, !host.isEmpty {
-                self.hosts.append(host)
+                try? self.table.insert(model: HostFilter(id: 0, host: host, type: self.type == .white ? 0 : 1))
+                self.reloadData()
                 self.tableView.reloadData()
             }
         }
@@ -171,7 +184,7 @@ class HostFilterViewController: UIViewController {
 }
 
 
-extension HostFilterViewController: UITableViewDataSource, UITableViewDelegate {
+extension HostFilterViewController: UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate, UIGestureRecognizerDelegate {
     // MARK: - UITableViewDataSource
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -192,7 +205,7 @@ extension HostFilterViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = hosts[indexPath.row]
+        cell.textLabel?.text = hosts[indexPath.row].host
         
         return cell
     }
@@ -205,7 +218,7 @@ extension HostFilterViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            hosts.remove(at: indexPath.row)
+            try? table.delete(model: hosts.remove(at: indexPath.row))
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }

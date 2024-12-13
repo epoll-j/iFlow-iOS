@@ -22,8 +22,8 @@ class MainViewController: UIViewController {
         Box(title: "IMAGES", items: 500, iconName: "photo"),
         Box(title: "VIDEOS", items: 13, iconName: "film"),
         Box(title: "RANDOM", items: 9, iconName: "tray"),
-        Box(title: "IMPORTANT", items: 6, iconName: "star"),
-        Box(title: "UNTITLED", items: 0, iconName: "square")
+//        Box(title: "IMPORTANT", items: 6, iconName: "star"),
+//        Box(title: "UNTITLED", items: 0, iconName: "square")
     ]
     
     override func viewDidLoad() {
@@ -76,7 +76,13 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if kind == UICollectionView.elementKindSectionHeader {
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CollectionHeaderView.identifier, for: indexPath)
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: CollectionHeaderView.identifier, for: indexPath) as! CollectionHeaderView
+            headerView.onHeaderTap = { [weak self] in
+                guard let self = self else { return }
+                let logViewController = LogViewController()
+                logViewController.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(logViewController, animated: true)
+            }
             return headerView
         }
         return UICollectionReusableView()

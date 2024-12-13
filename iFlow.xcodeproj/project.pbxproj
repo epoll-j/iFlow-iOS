@@ -74,6 +74,9 @@
 		469421732CF721D70004FE29 /* SwiftyFORM in Frameworks */ = {isa = PBXBuildFile; productRef = 469421722CF721D70004FE29 /* SwiftyFORM */; };
 		469421802CF86EF90004FE29 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 4694217F2CF86EF90004FE29 /* Tabman */; };
 		46BF6F5E2CF23B78009C24BA /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 46BF6F5D2CF23B78009C24BA /* Lottie */; };
+		46D954782D07EB2200F21B7D /* SessionTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D954772D07EB2200F21B7D /* SessionTable.swift */; };
+		46D9547D2D09390700F21B7D /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9547C2D09390700F21B7D /* LogViewController.swift */; };
+		46D954802D09399700F21B7D /* LogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D9547F2D09399700F21B7D /* LogTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -176,6 +179,9 @@
 		4642E72B2CEA489F00A29AAD /* FloatTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatTabBar.swift; sourceTree = "<group>"; };
 		4642E72D2CEA48C200A29AAD /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4642E72F2CEA48DE00A29AAD /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		46D954772D07EB2200F21B7D /* SessionTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionTable.swift; sourceTree = "<group>"; };
+		46D9547C2D09390700F21B7D /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		46D9547F2D09399700F21B7D /* LogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,6 +327,7 @@
 			children = (
 				463181332D02D83E00A1E6A1 /* DatabaseTable.swift */,
 				463181372D02D8C600A1E6A1 /* HostFilterTable.swift */,
+				46D954772D07EB2200F21B7D /* SessionTable.swift */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -370,6 +377,7 @@
 		4642E7182CEA275F00A29AAD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				46D954792D0938CB00F21B7D /* Log */,
 				469421742CF80C0A0004FE29 /* Setting */,
 				4642E7192CEA276900A29AAD /* Main */,
 				4642E7292CEA488000A29AAD /* FloatTabBarController.swift */,
@@ -411,6 +419,39 @@
 				463181122D02D03700A1E6A1 /* Controller */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		46D954792D0938CB00F21B7D /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				46D9547A2D0938E600F21B7D /* List */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		46D9547A2D0938E600F21B7D /* List */ = {
+			isa = PBXGroup;
+			children = (
+				46D9547E2D09398800F21B7D /* View */,
+				46D9547B2D0938F300F21B7D /* Controller */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		46D9547B2D0938F300F21B7D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				46D9547C2D09390700F21B7D /* LogViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		46D9547E2D09398800F21B7D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46D9547F2D09399700F21B7D /* LogTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -637,6 +678,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				463181362D02D88000A1E6A1 /* DatabaseManager.swift in Sources */,
+				46D954782D07EB2200F21B7D /* SessionTable.swift in Sources */,
 				463181382D02D8C600A1E6A1 /* HostFilterTable.swift in Sources */,
 				463181342D02D83E00A1E6A1 /* DatabaseTable.swift in Sources */,
 			);
@@ -648,7 +690,9 @@
 			files = (
 				463181132D02D03700A1E6A1 /* HostFilterTabViewController.swift in Sources */,
 				4642E7302CEA48DE00A29AAD /* CollectionHeaderView.swift in Sources */,
+				46D954802D09399700F21B7D /* LogTableViewCell.swift in Sources */,
 				4642E7092CEA25AE00A29AAD /* ViewController.swift in Sources */,
+				46D9547D2D09390700F21B7D /* LogViewController.swift in Sources */,
 				4642E7052CEA25AE00A29AAD /* AppDelegate.swift in Sources */,
 				4642E72A2CEA488000A29AAD /* FloatTabBarController.swift in Sources */,
 				4642E7072CEA25AE00A29AAD /* SceneDelegate.swift in Sources */,

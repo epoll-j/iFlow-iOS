@@ -15,4 +15,5 @@ protocol DatabaseTable {
     func createTable() throws
     func insert(model: ModelType) throws
     func fetchAll() throws -> [ModelType]
+    func delete(model: ModelType) throws
 }
